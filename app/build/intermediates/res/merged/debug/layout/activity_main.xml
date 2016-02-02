@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText 
+            android:id="@+id/et_conn"
+	        android:layout_width="0dp"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:hint="在此输入服务器端口号"/>
+    
+	    <Button 
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:text="连接"
+	        android:onClick="conn"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et_message"
+        android:hint="输入要发送的信息"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="发送"
+        android:onClick="send"/>
+    
+
+</LinearLayout>
